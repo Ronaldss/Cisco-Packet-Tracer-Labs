@@ -1,0 +1,27 @@
+VLAN SW-CISCO 2950-24
+
+COMANDOS 
+
+ACESSO
+- enable --> modo adm
+- configure terminal --> painel de controle
+
+CRIANDO VLAN
+- vlan #numero
+- name nome_da_vlan
+- end --> sair do modo config
+- show vlan brief --> visualizar vlans
+
+ADICIONANDO PORTAS A VLAN
+- acessar modo config
+- int f0/9 --> acessando a porta
+- switchport access vlan #numero --> acrescentar porta a vlan
+
+ADCIONANDO UMA PORTA A MAIS DE UMA VLAN
+- switchport mode trunk
+- switchport trunk allowed vlan 1,2
+
+MEMORIA
+- show run --> exibir configuração da memoria 
+- wr --> escrever permanetimento na memoria
+
